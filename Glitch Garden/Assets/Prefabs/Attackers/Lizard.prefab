@@ -45,6 +45,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +58,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -92,8 +95,8 @@ GameObject:
   - component: {fileID: 7937356944931788787}
   - component: {fileID: 421246636742730080}
   - component: {fileID: 4748914342459726664}
-  - component: {fileID: 7937356944931788790}
   - component: {fileID: 1783653733294723856}
+  - component: {fileID: 7937356944931788790}
   - component: {fileID: 2440377204634260902}
   m_Layer: 0
   m_Name: Lizard
@@ -131,6 +134,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -142,6 +147,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -231,18 +237,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6051271, y: 0.6748266}
   m_EdgeRadius: 0
---- !u!114 &7937356944931788790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7937356944931788786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66750c374f9853c4580a9d464e77bfea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1783653733294723856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +251,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 300
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!114 &7937356944931788790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7937356944931788786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66750c374f9853c4580a9d464e77bfea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2440377204634260902
 MonoBehaviour:
   m_ObjectHideFlags: 0

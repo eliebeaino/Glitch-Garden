@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6366146098232760007}
   - component: {fileID: 3469471700547724236}
   - component: {fileID: 818592906751674653}
-  - component: {fileID: 6137975041430566433}
   - component: {fileID: 6142739095495905462}
+  - component: {fileID: 6137975041430566433}
   - component: {fileID: 3382265339237998372}
   m_Layer: 0
   m_Name: Gravestone
@@ -81,19 +81,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0160499, y: 1.0160501}
   m_EdgeRadius: 0
---- !u!114 &6137975041430566433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170658362047219309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8df52f2c6f06b44684caa15945dac18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 80
 --- !u!114 &6142739095495905462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +94,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 150
-  deathVFX: {fileID: 0}
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!114 &6137975041430566433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170658362047219309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8df52f2c6f06b44684caa15945dac18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 80
 --- !u!114 &3382265339237998372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +165,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -176,6 +178,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

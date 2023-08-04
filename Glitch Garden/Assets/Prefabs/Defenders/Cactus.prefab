@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7849340613025171978}
   - component: {fileID: 7564778735325799297}
   - component: {fileID: 16616494}
-  - component: {fileID: 473707354164169842}
-  - component: {fileID: 375802310}
   - component: {fileID: 6730364973347926272}
+  - component: {fileID: 375802310}
+  - component: {fileID: 473707354164169842}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -81,6 +81,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0294069, y: 1.0047934}
   m_EdgeRadius: 0
+--- !u!114 &6730364973347926272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632929522760330168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c70f33a56b3ad54baaa290de719cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!114 &375802310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632929522760330168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8df52f2c6f06b44684caa15945dac18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 50
 --- !u!114 &473707354164169842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,33 +123,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 2319791218709241700, guid: 111380139b3a3714688eb06d72606f54,
     type: 3}
   gun: {fileID: 8074168475082077194}
---- !u!114 &375802310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632929522760330168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8df52f2c6f06b44684caa15945dac18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 50
---- !u!114 &6730364973347926272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632929522760330168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c70f33a56b3ad54baaa290de719cf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  deathVFX: {fileID: 0}
 --- !u!1 &8074168475082077194
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +199,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -210,6 +212,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
